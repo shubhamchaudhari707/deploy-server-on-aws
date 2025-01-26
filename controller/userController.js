@@ -25,12 +25,15 @@ const getUser = async (req, res) => {
     try {
 
 
-        const user = await User.find({})
+        // const user = await User.find({})
 
-        console.log(user)
+        const user = {
+            "name": "shubham",
+            "email": "shubham@gmail.com"
+        }
 
         res.status(201).send({
-            message: "user created sucessfully",
+            message: "user fetched sucessfully",
             "data": user
         })
 

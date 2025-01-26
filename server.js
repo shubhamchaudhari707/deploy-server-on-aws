@@ -8,7 +8,7 @@ const userRoutes = require("./routes/userRoutes")
 app.use(express.json());
 connectDB
 
-app.use("/user", userRoutes)
+app.use("/", userRoutes)
 
 
 app.listen(process.env.port, () => {
